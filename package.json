@@ -1,0 +1,22 @@
+{
+	"name": "cm24-mock",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"start": "node index.js",
+		"dev": "nodemon index.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.18.2",
+		"sqlite": "^5.1.1",
+		"sqlite3": "^5.1.7"
+	},
+	"devDependencies": {
+		"nodemon": "^3.0.3"
+	}
+}
