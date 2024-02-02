@@ -125,13 +125,13 @@ app.get(`/api/books?`, async (req, res) => {
 			return;
 		}
 		if (!!title) {
-			sql += ` WHERE title LIKE ?`;
-			params.push(title);
+			sql += ` WHERE title = ?`;
+			// params.push(title);
 		} else if (!!author) {
-			sql += ` WHERE author LIKE ?`;
+			sql += ` WHERE author = ?`;
 			params.push(author);
 		} else if (!!genre) {
-			sql += ` WHERE genre LIKE ?`;
+			sql += ` WHERE genre = ?`;
 			params.push(genre);
 		}
 
