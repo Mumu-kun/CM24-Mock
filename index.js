@@ -126,7 +126,7 @@ app.get(`/api/books?`, async (req, res) => {
 		}
 		if (!!title) {
 			sql += ` WHERE title = ?`;
-			// params.push(title);
+			params.push(title);
 		} else if (!!author) {
 			sql += ` WHERE author = ?`;
 			params.push(author);
